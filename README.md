@@ -5,7 +5,7 @@ Satuverb is a flexible reverb that has many creative and natural sounding uses. 
 
 Analog reverb units have this behavior by their nature; the components used in the delay lines would naturally introduce saturation and shape the frequency spectrum in increasingly dramatic ways as the reverb tail faded.
 
-To download Satuverb, go to the [Releases](releases) section.
+To download Satuverb, go to the [Releases](releases) section. If you're not sure where to put a VST3 file to install it, check the directions [here](https://helpcenter.steinberg.de/hc/en-us/articles/115000177084-VST-plug-in-locations-on-Windows).
 
 # Reverberator Design
 ## Topology
