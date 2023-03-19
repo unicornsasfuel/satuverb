@@ -1,7 +1,7 @@
 # Satuverb
 ![Satuverb Interface](https://github.com/unicornsasfuel/satuverb/raw/main/satuverb.png "Satuverb Interface")
 
-Satuverb is a flexible reverb that has many creative and natural sounding uses. It has a saturator and EQ controls inside the reverberator, which apply every time the signal is fed back. This causes the effects to grow more extreme as the reverb tail trails off.
+Satuverb is a flexible reverb that has many creative and natural sounding uses, produced by request for [FBPM](https://fbpm.org). It has a saturator and EQ controls inside the reverberator, which apply every time the signal is fed back. This causes the effects to grow more extreme as the reverb tail trails off.
 
 Analog reverb units have this behavior by their nature; the components used in the delay lines would naturally introduce saturation and shape the frequency spectrum in increasingly dramatic ways as the reverb tail faded.
 
