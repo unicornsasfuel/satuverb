@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<magic>
+  <Styles>
+    <Style name="default">
+      <Nodes/>
+      <Classes>
+        <plot-view border="2" background-color="black" border-color="silver" display="contents"/>
+        <nomargin margin="0" padding="0" border="0"/>
+        <group margin="5" padding="5" border="2" flex-direction="column"/>
+        <transparent background-color="transparentblack"/>
+      </Classes>
+      <Types>
+        <Slider border="0" slider-textbox="textbox-below"/>
+        <ToggleButton border="0" max-height="50" caption-size="0" text="Active"/>
+        <TextButton border="0" max-height="50" caption-size="0"/>
+        <ComboBox border="0" max-height="50" caption-size="0"/>
+        <Plot border="0" margin="0" padding="0" background-color="00000000"
+              radius="0"/>
+        <XYDragComponent border="0" margin="0" padding="0" background-color="00000000"
+                         radius="0"/>
+      </Types>
+      <Palettes>
+        <default/>
+      </Palettes>
+    </Style>
+  </Styles>
+  <View id="root" resizable="0" resize-corner="0" display="contents"
+        flex-direction="column" width="792" height="499" min-width="792"
+        min-height="499" max-width="" max-height="" aspect="" caption-color="FF440957"
+        caption-size="30" background-color="FF000000" caption="" title="Satuverb"
+        border-color="" background-gradient="linear-gradient(181,0% ffffa9a9,100% ff801515)"
+        margin="0" radius="" background-image="pluginbg_png" image-placement="centred">
+    <View pos-x=".9%" pos-y="7%" pos-width="29.5%" pos-height="92.5%" background-alpha=""
+          background-color="00000000">
+      <Slider caption="Wet %" parameter="/satuverb/reverbwet" suffix="%" slider-background="FF000000"
+              slider-thumb="FFA60404" slider-track="FFC80909" slider-text="FF000000"
+              caption-color="FF000000" background-color="00000000" tooltip="Amount of reverb to mix with the incoming signal, increase for more reverb"/>
+      <Slider caption="Pre-Delay" parameter="/satuverb/predelay" suffix="ms"
+              slider-track="FFC80909" slider-background="FF000000" slider-thumb="FFA60404"
+              slider-text="FF000000" caption-color="FF000000" background-color="00000000"
+              tooltip="An extra delay before the signal is reverberated"/>
+      <Slider caption="Decay" parameter="/satuverb/decay" suffix="%" slider-text="FF000000"
+              slider-track="FFC80909" slider-background="FF000000" slider-thumb="FF8E1313"
+              caption-color="FF000000" background-color="00000000" tooltip="Controls how much the signal decays over time, increase for shorter reverb tail"/>
+    </View>
+    <View pos-x="30.4%" pos-y="7%" pos-width="69%" pos-height="44%" background-color="00000000">
+      <Slider caption="Highpass Freq" parameter="/satuverb/hpfreq" slider-type="rotary-horizontal-vertical"
+              suffix="Hz" rotary-fill="FFC80909" rotary-outline="FF000000"
+              slider-text="FF000000" caption-color="FF000000" background-color="00000000"
+              tooltip="Raise this to cut more low end from the reverb"/>
+      <Slider caption="Lowpass Freq" parameter="/satuverb/lpfreq" slider-type="rotary-horizontal-vertical"
+              suffix="Hz" rotary-fill="FFC80909" rotary-outline="FF000000"
+              slider-text="FF000000" caption-color="FF000000" background-color="00000000"
+              tooltip="Lower this to cut more high end from the reverb"/>
+      <Slider caption="Peak Freq" parameter="/satuverb/peakfreq" slider-type="rotary-horizontal-vertical"
+              suffix="Hz" background-color="00000000" rotary-fill="FFC80909"
+              rotary-outline="FF000000" slider-text="FF000000" caption-color="FF000000"
+              tooltip="A frequency to boost or cut in the reverb"/>
+      <Slider caption="Peak Gain" parameter="/satuverb/peakgain" slider-type="rotary-horizontal-vertical"
+              suffix="dB" background-color="00000000" rotary-fill="FFC80909"
+              rotary-outline="FF000000" slider-text="FF000000" caption-color="FF000000"
+              tooltip="How much to boost or cut at the peak freq"/>
+      <Slider caption="Peak Q" parameter="/satuverb/peakq" slider-type="rotary-horizontal-vertical"
+              background-color="00000000" rotary-fill="FFC80909" rotary-outline="FF000000"
+              slider-text="FF000000" caption-color="FF000000" tooltip="How wide or narrow the peak boost or cut is, raise to narrow, lower to widen"/>
+    </View>
+    <View pos-x="30.4%" pos-y="60%" pos-width="68.7%" pos-height="39%"
+          flex-align-self="end" background-color="00000000">
+      <Slider caption="Drive" parameter="/satuverb/drive" suffix="dB" background-color="00000000"
+              slider-type="rotary-horizontal-vertical" rotary-fill="FFC80909"
+              rotary-outline="FF000000" slider-text="FF000000" caption-color="FF000000"
+              tooltip="Raise to increase the gain of the signal before saturation"/>
+      <Slider caption="Post-Gain" parameter="/satuverb/postgain" suffix="dB"
+              background-color="00000000" slider-type="rotary-horizontal-vertical"
+              rotary-fill="FFC80909" rotary-outline="FF000000" slider-text="FF000000"
+              caption-color="FF000000" tooltip="Decrease to lower the gain of the signal after saturation"/>
+      <Slider caption="Wet %" parameter="/satuverb/satwet" suffix="%" background-color="00000000"
+              slider-type="rotary-horizontal-vertical" rotary-fill="FFC80909"
+              rotary-outline="FF000000" slider-text="FF000000" caption-color="FF000000"
+              tooltip="Controls the amount of saturated signal used in the reverb, lower for less saturated signal"/>
+    </View>
+  </View>
+</magic>
